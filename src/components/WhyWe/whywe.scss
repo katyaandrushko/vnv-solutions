@@ -1,0 +1,140 @@
+.title {
+
+    letter-spacing: 6px;
+    font-size: 30px;
+    display: flex;
+    margin-left: 5rem;
+    margin-top: 90px;
+    padding-bottom: 4rem;
+    font-weight: 300;
+    background: #f3eeeb;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+
+
+.maincontent {
+    display: flex;
+    gap: 30px;
+    flex-wrap: wrap;
+    justify-content: center;
+
+
+
+
+    .why-wrapper {
+
+
+        justify-content: center;
+        align-items: center;
+        display: flex;
+        gap: 20px;
+        flex-direction: column;
+        height: 350px;
+
+        width: calc(33.33333334% - 70px);
+        // flex: 0 0 calc(50% - 20px); // Розміри для декстопного режиму, 2 комірки в ряд
+
+        padding: 20px;
+        border-radius: 30px;
+        transition: all 0.3s ease;
+        background-color: #242424;
+
+
+
+        &:hover {
+            transform: scale(1.05);
+        }
+
+        @media (max-width: 768px) {
+            flex: 0 0 calc(100% - 20px); // Змінюємо розмір для мобільних пристроїв, 1 комірка в ряд
+        }
+
+        .titlewhy {
+            font-size: 1.5rem;
+            color: #eaeaea;
+            background-color: #242424;
+
+        }
+
+        p {
+            font-size: 1rem;
+            background-color: #242424;
+            color: #c1bebe;
+        }
+
+        .emoji {
+            font-size: 3rem;
+            background-color: #242424;
+        }
+
+        .emogi {
+            font-size: 3rem;
+            background-color: #242424;
+        }
+
+        .emoji:hover {
+            animation-name: wave-animation;
+            animation-duration: 3.0s;
+            animation-iteration-count: infinite;
+            transform-origin: 70% 70%;
+        }
+
+        @keyframes wave-animation {
+            0% {
+                transform: rotate(0.0deg)
+            }
+
+            10% {
+                transform: rotate(14.0deg)
+            }
+
+            20% {
+                transform: rotate(-8.0deg)
+            }
+
+            30% {
+                transform: rotate(14.0deg)
+            }
+
+            40% {
+                transform: rotate(-4.0deg)
+            }
+
+            50% {
+                transform: rotate(10.0deg)
+            }
+
+            60% {
+                transform: rotate(0.0deg)
+            }
+
+            100% {
+                transform: rotate(0.0deg)
+            }
+
+
+
+        }
+
+        button {
+            margin-top: 10px;
+            padding: 10px 20px;
+            width: 30%;
+            background-color: #5c5f61;
+            color: #fff;
+            border: none;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+
+            &:hover {
+                background-color: #e3ecf5;
+                color: black;
+            }
+        }
+
+
+    }
+}

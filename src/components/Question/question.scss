@@ -1,0 +1,33 @@
+.faq-row-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 4rem;
+
+    .faq-title {
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 2rem;
+
+    }
+
+    .faq-body {
+
+        display: grid;
+        gap: 2rem;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+
+        .faq-row {
+
+
+            .row-title {}
+
+            .row-content {
+
+
+                .row-content-text {}
+            }
+        }
+    }
+}

@@ -1,25 +1,24 @@
-import logo from './logo.svg';
-import './App.css';
+import './App.css'
+import Contact from './components/Contact/Contact'
+import LeadMagnet from './components/LeadMagnet/LeadMagnet'
+import Nav from './components/Nav/Nav'
+import Projects from './components/Projects/Projects'
+import Question from './components/Question/Question'
+import Social from './components/Social/Social'
+import WhyWe from './components/WhyWe/WhyWe'
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Nav />
+      <WhyWe />
+      <Projects />
+      <Question />
+      <Social />
+      <Contact />
+      <LeadMagnet />
     </div>
-  );
+  )
 }
 
-export default App;
+export default App

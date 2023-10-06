@@ -1,0 +1,19 @@
+.social {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 5rem;
+
+    .icons-s {
+        display: flex;
+        gap: 30px;
+
+
+    }
+
+    .icons-s:hover {
+        animation: wiggle 2s linear infinite;
+    }
+
+
+}
