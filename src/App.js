@@ -13,10 +13,11 @@ function App() {
       <Nav />
       <WhyWe />
       <Projects />
-      <Question />
-      <Social />
       <Contact />
+      <Question />
+
       <LeadMagnet />
+      <Social />
     </div>
   )
 }

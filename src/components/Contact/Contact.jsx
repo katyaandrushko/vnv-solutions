@@ -1,22 +1,42 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { CiFacebook } from 'react-icons/ci'
 import { FaInstagram } from 'react-icons/fa'
 import { AiFillLinkedin } from 'react-icons/ai'
 import { RiTiktokFill } from 'react-icons/ri'
-import { FaTelegram } from 'react-icons/fa'
+
 import './contact.scss'
 
 function Contact() {
+  const [socialMedia, setSocialMedia] = useState('number')
+  const handleIconClick = (media) => {
+    setSocialMedia(media)
+  }
   return (
     <section className="container">
       <div className="contact">
         <div className="leftside">
           <h1>Як з вами зв`язатися?</h1>
           <div className="icons-s">
-            <CiFacebook size={30} className="icon1" />
-            <FaInstagram size={30} className="icon2" />
-            <AiFillLinkedin size={30} className="icon3" />
-            <RiTiktokFill size={30} className="icon4" />
+            <CiFacebook
+              size={30}
+              className="icon1"
+              onClick={() => handleIconClick('number')}
+            />
+            <FaInstagram
+              size={30}
+              className="icon2"
+              onClick={() => handleIconClick('email')}
+            />
+            <AiFillLinkedin
+              size={30}
+              className="icon3"
+              onClick={() => handleIconClick('whatsapp')}
+            />
+            <RiTiktokFill
+              size={30}
+              className="icon4"
+              onClick={() => handleIconClick('telegram')}
+            />
           </div>
         </div>
 
@@ -33,42 +53,59 @@ function Contact() {
               placeholder="Ім`я та прізвище"
               required
             />
-            <label>Номер телефону</label>
 
-            <input
-              type="number"
-              name="user_number"
-              id="user_number"
-              placeholder="Номер телефону"
-              required
-            />
-            <label> Електронна пошта</label>
-            <input
-              type="text"
-              name="user_email"
-              id="user_email"
-              placeholder="Електронна пошта"
-              required
-            />
-            <label>Номер телефону у WhatsApp</label>
-            <input
-              type="text"
-              name="user_email"
-              id="user_email"
-              placeholder="Телеграм"
-              WhatsApp
-              required
-            />
-            <label>Номер телефону або нікнейм у телеграм</label>
-            <input
-              type="text"
-              name="user_email"
-              id="user_email"
-              placeholder="WhatsApp"
-              required
-            />
+            {socialMedia === 'number' && (
+              <>
+                <label>Номер телефону</label>
+                <input
+                  type="number"
+                  name="user_number"
+                  id="user_number"
+                  placeholder="Номер телефону"
+                  required
+                />
+              </>
+            )}
+            {socialMedia === 'email' && (
+              <>
+                <label> Електронна пошта</label>
+                <input
+                  type="text"
+                  name="user_email"
+                  id="user_email"
+                  placeholder="Електронна пошта"
+                  required
+                />
+              </>
+            )}
 
-            <button className="btn c-btn" type="submit">
+            {socialMedia === 'whatsapp' && (
+              <>
+                <label>Номер телефону у WhatsApp</label>
+                <input
+                  type="text"
+                  name="user_email"
+                  id="user_email"
+                  placeholder="Телеграм"
+                  WhatsApp
+                  required
+                />
+              </>
+            )}
+            {socialMedia === 'telegram' && (
+              <>
+                <label>Номер телефону або нікнейм у телеграм</label>
+                <input
+                  type="text"
+                  name="user_email"
+                  id="user_email"
+                  placeholder="WhatsApp"
+                  required
+                />
+              </>
+            )}
+
+            <button className="button" type="submit">
               Надіслати
             </button>
           </form>
