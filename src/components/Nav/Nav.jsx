@@ -1,9 +1,8 @@
 import './nav.scss'
 import React, { useState } from 'react'
+import Hamburger from '../Hamburger/Hamburger'
 
 function Nav() {
-  const [active, setActive] = useState('nav__menu')
-
   return (
     <nav className="nav">
       <div className="logo">
@@ -38,9 +37,7 @@ function Nav() {
             </a>
           </li>
         </ul>
-        <button className="button" id="contact">
-          Замовити
-        </button>
+        <Hamburger />
       </div>
     </nav>
   )

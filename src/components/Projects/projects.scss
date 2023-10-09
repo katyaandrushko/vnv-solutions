@@ -1,0 +1,67 @@
+.projects {
+
+    height: 100vh;
+
+
+    .title {
+        padding-bottom: 0;
+    }
+
+    .p-img {
+        width: 70%;
+        height: 600px;
+    }
+
+    .desc {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        text-align: left;
+
+
+        .project-title {
+            width: 30%;
+            margin-left: 11rem;
+            padding-top: 20px;
+            font-size: 29px;
+            font-weight: 500;
+
+
+        }
+
+        .project-subtitle {
+            font-weight: normal;
+            font-size: 18px;
+            width: 20%;
+            margin-left: 11rem;
+        }
+    }
+}
+
+.swiper {
+    margin: 4rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+
+
+
+}
+
+.swiper-scrollbar {
+    display: none;
+}
+
+
+
+.swiper-pagination-bullet {
+    color: aliceblue;
+
+}
+
+
+.swiper-pagination {
+
+    // display: none;
+}
