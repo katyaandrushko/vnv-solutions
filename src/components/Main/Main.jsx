@@ -3,7 +3,7 @@ import './main.scss'
 
 function Main() {
   return (
-    <section className="main">
+    <section className="section-main">
       <div className="container">
         <div className="main-title">
           <h1 className="main-text">

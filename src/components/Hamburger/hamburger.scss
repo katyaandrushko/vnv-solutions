@@ -27,4 +27,51 @@
 //     }
 
 
+
+// }
+
+//////////////////////////////////////////////////////////////
+// .hamburger {
+//     width: 2rem;
+//     height: 2rem;
+//     display: flex;
+//     justify-content: space-around;
+//     flex-flow: column nowrap;
+//     z-index: 10;
+// }
+
+// .burger {
+//     width: 2rem;
+//     height: 0.25rem;
+//     border-radius: 10px;
+//     margin-top: 2px;
+//     background-color: rgb(251, 246, 246);
+//     transform-origin: 1px;
+//     transition: all 0.3s linear;
+//     cursor: pointer;
+
+// }
+
+// .burger :active {
+//     width: 2rem;
+//     height: 0.25rem;
+//     border-radius: 10px;
+//     margin-top: 2px;
+//     background-color: rgb(251, 246, 246);
+//     transform-origin: 1px;
+//     transition: all 0.3s linear;
+
+//     &:first-child {
+//         background-color: white;
+//         transform: rotate(45deg);
+//     }
+
+//     &:nth-child(2) {
+//         opacity: 0;
+//     }
+
+//     &:last-child {
+//         background-color: white;
+//         transform: rotate(-45deg);
+//     }
 // }

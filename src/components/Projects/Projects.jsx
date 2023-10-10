@@ -24,48 +24,90 @@ function Projects() {
       >
         <SwiperSlide>
           <div className="swip-content">
-            <img src="./assets/iren.png" alt="" className="p-img" />
-            <div className="desc">
-              <h1 className="project-title">
-                Lorem, ipsum dolor sit amet consectetid, non cumque dolore.
-              </h1>
-              <h2 className="project-subtitle">
-                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Esse
-                libero voluptatibus quibusdam saepe, officia fugiat in magnam
-                adipisci
-              </h2>
+            <div className="proj-desc">
+              <img src="./assets/iren.png" alt="" className="p-img" />
+              <div className="desc">
+                <h1 className="project-title">
+                  Lorem, ipsum dolor sit amet consectetid, non cumque dolore.
+                </h1>
+                <h2 className="project-subtitle">
+                  Lorem ipsum, dolor sit amet consectetur adipisicing elit. Esse
+                  libero voluptatibus quibusdam saepe, officia fugiat in magnam
+                  adipisci
+                </h2>
+              </div>
             </div>
           </div>
         </SwiperSlide>
         <SwiperSlide>
           {' '}
           <div className="swip-content">
-            <img src="./assets/project.jpg" className="p-img" alt="" />
-            <div className="desc">
-              <h1 className="project-title">
-                Lorem, ipsum dolor sit amet consectetid, non cumque dolore.
-              </h1>
-              <h2 className="project-subtitle">
-                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Esse
-                libero voluptatibus quibusdam saepe, officia fugiat in magnam
-                adipisci
-              </h2>
+            <div className="proj-desc">
+              <img src="./assets/project.jpg" className="p-img" alt="" />
+              <div className="desc">
+                <h1 className="project-title">
+                  Lorem, ipsum dolor sit amet consectetid, non cumque dolore.
+                </h1>
+                <h2 className="project-subtitle">
+                  Lorem ipsum, dolor sit amet consectetur adipisicing elit. Esse
+                  libero voluptatibus quibusdam saepe, officia fugiat in magnam
+                  adipisci
+                </h2>
+              </div>
             </div>
           </div>
         </SwiperSlide>
-        <SwiperSlide>
-          {' '}
+        {/* <SwiperSlide>
           <div className="swip-content">
-            <img src="./assets/learnitlive.png" alt="" className="p-img" />
-            <div className="desc">
-              <h1 className="project-title">
-                Lorem, ipsum dolor sit amet consectetid, non cumque dolore.
-              </h1>
-              <h2 className="project-subtitle">
-                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Esse
-                libero voluptatibus quibusdam saepe, officia fugiat in magnam
-                adipisci modi praesentium incidunt
-              </h2>
+            <div className="proj-desc">
+              <img src="./assets/learnitlive.png" alt="" className="p-img" />
+              <div className="desc">
+                <h1 className="project-title">
+                  Lorem, ipsum dolor sit amet consectetid, non cumque dolore.
+                </h1>
+                <h2 className="project-subtitle">
+                  Lorem ipsum, dolor sit amet consectetur adipisicing elit. Esse
+                  libero voluptatibus quibusdam saepe, officia fugiat in magnam
+                  adipisci modi praesentium incidunt sdfsfs
+                </h2>
+              </div>
+            </div>
+          </div>
+        </SwiperSlide> */}
+
+        <SwiperSlide className="swiiper">
+          <div className="proj-desc-video">
+            <div class="slide-video" data-slide-type="vdo">
+              <video
+                id="Video Wrapper "
+                autoplay="true"
+                loop="true"
+                muted=""
+                playsinline=""
+                className="video-sl"
+              >
+                <source src="./assets/video.mov" type="video/mp4" />
+                <div className="dees-video">
+                  <h1 className="project-title">
+                    Lorem, ipsum dolor sit amet consectetid, non cumque dolore.
+                  </h1>
+                  <h2 className="project-subtitle">
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                    Esse libero voluptatibus quibusdam saepe, officia fugiat in
+                    magnam adipisci modi praesentium incidunt sdfsfs
+                  </h2>
+                </div>
+              </video>
+              {/* <div className="desc-video">
+                <h1 className="project-title">
+                  Lorem, ipsum dolor sit amet consectetid, non cumque dolore.
+                </h1>
+                <h2 className="project-subtitle">
+                  Lorem ipsum, dolor sit amet consectetur adipisicing elit. Esse
+                  libero voluptatibus quibusdam saepe, officia fugiat in magnam
+                  adipisci modi praesentium incidunt sdfsfs
+                </h2>
+              </div> */}
             </div>
           </div>
         </SwiperSlide>

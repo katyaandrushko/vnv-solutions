@@ -12,10 +12,15 @@ function Contact() {
     setSocialMedia(media)
   }
   return (
-    <section className="container">
-      <div className="contact">
+    <section className="contact">
+      <div className="container">
         <div className="leftside">
-          <h1>Як з вами зв`язатися?</h1>
+          <h1 className="text">
+            Хочете покращити ваш бізнес? Скоріше лишайте заявку і ми вас
+            професійно проконсультуємо!
+          </h1>
+
+          <h2 className="c-text">Як з вами зв`язатися?</h2>
           <div className="icons-s">
             <CiFacebook
               size={30}

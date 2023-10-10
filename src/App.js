@@ -13,10 +13,10 @@ import WhyWe from './components/WhyWe/WhyWe'
 
 function App() {
   return (
-    <div className="App">
+    <div className="container mx-auto mb-8 px-8 overflow-x-hidden">
       <Nav />
-
       <Main />
+
       <WhyWe />
       <Services />
       <Projects />

@@ -1,10 +1,14 @@
-.container {
+.contact {
 
-    .contact {
+    background-color: #323131;
+
+    .container {
+        width: 100%;
+        height: auto;
         display: flex;
-        justify-content: space-between;
-        align-items: center;
-        justify-content: center;
+        flex-direction: column;
+        padding-bottom: 7rem;
+
 
         .leftside {
             display: flex;
@@ -12,7 +16,91 @@
             justify-content: center;
             align-items: center;
             flex-direction: column;
+            gap: 15px;
+
+            .text {
+                text-align: center;
+                padding-bottom: 20px;
+                font-weight: 600;
+                width: 60%;
+
+            }
+
+            .c-text {
+                width: auto;
+                text-align: center;
+                font-weight: 400;
+            }
+
+            .icons-s {
+                display: flex;
+                gap: 10px;
+            }
+        }
+
+        .rightside {
+            display: flex;
+            flex: 1;
+            justify-content: center;
+            align-items: center;
+
+
+            .contact-form {
+                width: 50%;
+                align-items: center;
+                flex-direction: column;
+                text-align: center;
+                display: flex;
+                gap: 15px;
+
+
+                label {}
+
+                input {
+
+                    width: 100%;
+                    height: 60px;
+                    padding: 20px;
+                    outline: none;
+                    border-radius: 20px;
+                    margin-bottom: 13px;
+
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 1024.98px) {
+    .contact {
+        width: 100%;
+        height: auto;
+
+        display: flex;
+        flex-wrap: wrap;
+
+        .leftside {
+
+            display: flex;
+            flex: 1;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
             gap: 10px;
+
+            .text {
+                text-align: center;
+                padding-bottom: 20px;
+                font-weight: 600;
+                width: auto;
+
+            }
+
+            .c-text {
+                width: auto;
+                text-align: center;
+                font-weight: 400;
+            }
 
             .icons-s {
                 display: flex;
@@ -32,6 +120,9 @@
                 align-items: center;
                 flex-direction: column;
                 text-align: center;
+                display: flex;
+                gap: 10px;
+
 
                 label {}
 

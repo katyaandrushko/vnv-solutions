@@ -437,15 +437,15 @@ function Services() {
                     features={service.features}
                   />
                 )}
+                <div className="rightside">
+                  <img
+                    src="./assets/illustration.svg"
+                    alt=""
+                    className="services-img"
+                  />
+                </div>
               </div>
             ))}{' '}
-            <div className="rightside">
-              <img
-                src="./assets/illustration.svg"
-                alt=""
-                className="services-img"
-              />
-            </div>
           </div>
         </div>
         {/* Один раз виводимо img за межами циклу */}

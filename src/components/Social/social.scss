@@ -2,7 +2,8 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    margin: 5rem;
+    padding: 5rem;
+    background-color: #191818;
 
     .icons-s {
         display: flex;
@@ -16,4 +17,23 @@
     }
 
 
+}
+
+@media (max-width: 360.98px) {
+
+    .social {
+
+        .icons-s {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+
+
+        }
+    }
+
+    .icon {
+        width: 40px;
+        height: 40px;
+
+    }
 }
