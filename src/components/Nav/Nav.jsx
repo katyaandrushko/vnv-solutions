@@ -10,11 +10,7 @@ function Nav() {
         <div className="navbars">
           <div className="logo">
             <a href="/">
-              <img
-                src="../../assets/logo.png"
-                alt="Logo"
-                className="logo-img"
-              />
+              <img src="./assets/logo.png" alt="Logo" className="logo-img" />
             </a>
           </div>
 
