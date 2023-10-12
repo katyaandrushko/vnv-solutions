@@ -2,12 +2,14 @@
 
 * {
   box-sizing: border-box;
-  margin: 0;
-  font-family: 'PT Sans', sans-serif;
-  background-color: #191818;
-
+  margin: 0 auto;
+  max-width: 100%;
   color: rgb(247, 250, 250);
   font-family: 'Montserrat';
+}
+
+body {
+  font-family: 'PT Sans', sans-serif;
 }
 
 li,
@@ -21,4 +23,29 @@ ul {
 a {
   text-decoration: none;
   color: rgb(204, 204, 204);
+}
+
+.btn {
+  color: #1c1a1a;
+  border: 2px solid rgb(58, 56, 57);
+  border-radius: 20px;
+  padding: 18px 36px;
+  display: inline-block;
+  font-family: 'Lucida Console', Monaco, monospace;
+  font-size: 14px;
+  letter-spacing: 1px;
+  cursor: pointer;
+  box-shadow: inset 0 0 0 0 #817f80;
+  -webkit-transition: ease-out 0.4s;
+  -moz-transition: ease-out 0.4s;
+  transition: ease-out 0.6s;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+}
+
+.btn:hover {
+  box-shadow: inset 400px 0 0 0 #3e3e3e;
+  color: aliceblue;
+  transition: all 0.5s;
+  transform: scale(1.1);
 }

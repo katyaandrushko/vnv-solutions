@@ -6,23 +6,24 @@ const data = {
   title: 'FAQ ',
   rows: [
     {
-      title: 'Lorem ipsum dolor sit amet,',
-      content: 'Lorem ipsum dolor sit amet, consectetur ',
+      title: 'Які гарантії надаєте щодо якості продукту чи послуги?',
+      content:
+        'Ми гарантуємо високу якість наших послуг та надаємо повну підтримку після замовлення протягом 2 років від роботи',
     },
     {
-      title: 'Nunc maximus, magna at ultricies elementum',
+      title: 'Які можливості є для нашоєї співпраці в майбутньому',
       content:
-        'Nunc maximus, magna at ultricies elementum, risus turpis vulputate quam.',
+        'Ми готові до довгострокової співпраці та надання подальших послуг, таких як підтримка, розширення функціональності і оновлення.',
     },
     {
-      title: 'Curabitur laoreet, mauris vel blandit fringilla',
+      title: 'Який строк виконання проекту (створення сайту, боту в телеграм)?',
       content:
-        'Curabitur laoreet, mauris vel blandit fringilla, leo elit rhoncus nunc',
+        'Термін виконання проекту варіюється залежно від складності і обсягу робіт. Ми завжди намагаємося виконати роботу якнайшвидше, не втрачаючи при цьому якість.',
     },
     {
-      title: 'Curabitur laoreet, mauris vel blandit fringi',
+      title: 'Яким чином ви гарантуєте конфіденційність наших даних?',
       content:
-        ' Nunc maximus, magna at ultricies elementum, risus turpis vulputate quam.',
+        ' Ми дотримуємося всіх необхідних заходів для забезпечення конфіденційності ваших даних і використовуємо сучасні методи шифрування та захисту інформації.',
     },
   ],
 }
@@ -41,7 +42,7 @@ const styles = {
   rowContentPaddingTop: '10px',
   rowContentPaddingBottom: '10px',
   rowContentPaddingLeft: '50px',
-  rowContentPaddingRight: '150px',
+  // rowContentPaddingRight: '150px',
   arrowColor: 'white',
   transitionDuration: '1s',
   timingFunc: 'ease',
@@ -56,7 +57,9 @@ export default class Question extends Component {
   render() {
     return (
       <div className="question">
-        <Faq data={data} styles={styles} config={config} />
+        <div className="faq">
+          <Faq data={data} styles={styles} config={config} />
+        </div>
       </div>
     )
   }

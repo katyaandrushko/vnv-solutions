@@ -1,7 +1,7 @@
 import './App.css'
 import Brief from './components/Brief/Brief'
 import Contact from './components/Contact/Contact'
-import Hamburger from './components/Hamburger/Hamburger'
+
 import LeadMagnet from './components/LeadMagnet/LeadMagnet'
 import Main from './components/Main/Main'
 import Nav from './components/Nav/Nav'
@@ -14,8 +14,8 @@ import WhyWe from './components/WhyWe/WhyWe'
 function App() {
   return (
     <div className="App">
+      <LeadMagnet />
       <Nav />
-
       <Main />
       <WhyWe />
       <Services />
@@ -24,7 +24,6 @@ function App() {
       <Brief />
       <Question />
       <Social />
-      <LeadMagnet />
     </div>
   )
 }

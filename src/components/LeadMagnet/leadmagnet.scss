@@ -1,12 +1,13 @@
 // .leadMagnet {
 //     position: fixed;
+//     z-index: 10;
 //     gap: 20px;
-//     top: 50%;
+//     bottom: 0;
 //     right: 0;
-//     transform: translateY(210%);
+//     // transform: translateY(210%);
 //     width: 350px;
 //     height: 150px;
-//     background-color: #030303; // Change the background color as needed
+//     background-color: #323131; // Change the background color as needed
 //     color: #fff; // Change the text color as needed
 //     display: flex;
 //     flex-direction: column;
@@ -14,10 +15,73 @@
 //     justify-content: center;
 //     cursor: pointer;
 //     border-radius: 20px;
-//     margin-right: 40px;
+//     // margin-right: 40px;
 
 //     .l-title {
 //         color: rgb(241, 247, 245);
-//         background-color: #030303;
+
+//     }
+
+//     .btn {
+//         padding: 5px 10px;
+//         font-size: 15px;
 //     }
 // }
+
+// // @media (max-width:1024.98px) {
+// //     .leadMagnet {
+// //         bottom: 79%;
+// //         width: 290px;
+// //         height: 150px;
+// //         text-align: center;
+
+// //     }
+// // }
+
+// // @media (max-width: 768px) {
+// //     .leadMagnet {
+// //         width: 80%;
+// //         height: auto;
+// //         // bottom: 10px;
+// //     }
+// // }
+
+
+
+.leadmagnet {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    margin-left: 20px;
+    background-color: #333333d5;
+    padding: 20px;
+    border: 1px solid #666;
+    border-radius: 40px;
+    display: flex;
+    align-items: center;
+    color: #fff;
+    z-index: 3;
+    font-weight: 800;
+    text-align: center;
+
+    .btn {
+        padding: 10px 5px;
+        letter-spacing: normal;
+        font-size: 12px;
+    }
+}
+
+
+.close-button {
+    background-color: #666;
+    color: #fff;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    margin-left: 10px;
+    cursor: pointer;
+}
+
+.close-button:hover {
+    background-color: #444;
+}

@@ -1,10 +1,14 @@
-.title {
+#whywe {
+    background-color: #191818;
 
+}
+
+.title {
     letter-spacing: 6px;
     font-size: 30px;
     display: flex;
-    margin-left: 5rem;
-    margin-top: 90px;
+    padding-left: 5rem;
+    padding-top: 90px;
     padding-bottom: 4rem;
     font-weight: 300;
     background: #f3eeeb;
@@ -16,47 +20,40 @@
 
 
 .maincontent {
-
+    background-color: #191818;
     display: flex;
     gap: 30px;
     flex-wrap: wrap;
     justify-content: center;
-
+    padding: 0 4rem;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
 
 
 
     .why-wrapper {
-
-
         justify-content: center;
         align-items: center;
-        display: flex;
-        gap: 20px;
-        flex-direction: column;
-        height: 350px;
-
-        width: calc(33.33333334% - 70px);
-        // flex: 0 0 calc(50% - 20px); // Розміри для декстопного режиму, 2 комірки в ряд
-
+        height: 100%;
         padding: 20px;
-        border-radius: 30px;
+        border-radius: 10px;
         transition: all 0.3s ease;
         background-color: #242424;
-
 
 
         &:hover {
             transform: scale(1.05);
         }
 
-        @media (max-width: 768px) {
-            flex: 0 0 calc(100% - 20px); // Змінюємо розмір для мобільних пристроїв, 1 комірка в ряд
-        }
 
         .titlewhy {
             font-size: 1.5rem;
             color: #eaeaea;
             background-color: #242424;
+            padding-bottom: 10px;
 
         }
 
@@ -64,16 +61,13 @@
             font-size: 1rem;
             background-color: #242424;
             color: #c1bebe;
-        }
-
-        .emoji {
-            font-size: 3rem;
-            background-color: #242424;
+            padding-bottom: 20px;
         }
 
         .emogi {
             font-size: 3rem;
             background-color: #242424;
+
         }
 
         .emoji:hover {
@@ -82,6 +76,8 @@
             animation-iteration-count: infinite;
             transform-origin: 70% 70%;
         }
+
+
 
         @keyframes wave-animation {
             0% {
@@ -120,22 +116,300 @@
 
         }
 
-        button {
-            margin-top: 10px;
-            padding: 10px 20px;
-            width: 30%;
-            background-color: #5c5f61;
-            color: #fff;
-            border: none;
-            cursor: pointer;
-            transition: background-color 0.3s ease;
+
+
+
+
+
+
+
+    }
+
+
+}
+
+.button {
+    width: 50%;
+    padding-top: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    .btn {
+        font-size: 17px;
+        font-weight: 600;
+        width: 57%;
+        border-radius: 10px;
+    }
+}
+
+@media (max-width: 950.98px) {
+    .maincontent {
+
+        // display: flex;
+        gap: 30px;
+        flex-wrap: wrap;
+        justify-content: center;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+
+
+
+
+        .why-wrapper {
 
             &:hover {
-                background-color: #e3ecf5;
-                color: black;
+                transform: scale(1.05);
             }
+
+            @media (max-width: 768px) {
+                flex: 0 0 calc(100% - 20px); // Змінюємо розмір для мобільних пристроїв, 1 комірка в ряд
+            }
+
+            .titlewhy {
+                font-size: 1.5rem;
+                color: #eaeaea;
+                background-color: #242424;
+
+            }
+
+            p {
+                font-size: 1rem;
+                background-color: #242424;
+                color: #c1bebe;
+            }
+
+            .emoji {
+                font-size: 3rem;
+                background-color: #242424;
+            }
+
+            .emogi {
+                font-size: 3rem;
+                background-color: #242424;
+            }
+
+            .emoji:hover {
+                animation-name: wave-animation;
+                animation-duration: 3.0s;
+                animation-iteration-count: infinite;
+                transform-origin: 70% 70%;
+            }
+
+            @keyframes wave-animation {
+                0% {
+                    transform: rotate(0.0deg)
+                }
+
+                10% {
+                    transform: rotate(14.0deg)
+                }
+
+                20% {
+                    transform: rotate(-8.0deg)
+                }
+
+                30% {
+                    transform: rotate(14.0deg)
+                }
+
+                40% {
+                    transform: rotate(-4.0deg)
+                }
+
+                50% {
+                    transform: rotate(10.0deg)
+                }
+
+                60% {
+                    transform: rotate(0.0deg)
+                }
+
+                100% {
+                    transform: rotate(0.0deg)
+                }
+
+
+
+            }
+
+
+
         }
+    }
+}
+
+@media (max-width: 768.98px) {
+    .title {
+        letter-spacing: 6px;
+        font-size: 25px;
+        display: flex;
+        padding-left: 3rem;
+        padding-top: 90px;
+        padding-bottom: 3rem;
+        font-weight: 300;
+        background: #f3eeeb;
+        background-clip: text;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
 
 
+
+    .maincontent {
+
+        .why-wrapper {
+
+            &:hover {
+                transform: scale(1.05);
+            }
+
+
+
+            .titlewhy {
+                font-size: 1.5rem;
+                color: #eaeaea;
+                background-color: #242424;
+
+            }
+
+            p {
+                font-size: 1rem;
+                background-color: #242424;
+                color: #c1bebe;
+            }
+
+            .btn {
+                padding: 5px 5px;
+                font-size: 10px;
+                letter-spacing: 1px;
+
+            }
+
+
+
+
+
+
+        }
+    }
+}
+
+@media (max-width: 610.98px) {
+    .button {
+        width: 60%;
+        padding-top: 40px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        .btn {
+            font-size: 17px;
+            font-weight: 600;
+            border-radius: 10px;
+        }
+    }
+}
+
+@media (max-width: 510.98px) {
+
+
+    .title {
+
+        font-size: 19px;
+
+    }
+
+    .maincontent {
+        background-color: #191818;
+        display: flex;
+        gap: 30px;
+        flex-wrap: wrap;
+        justify-content: center;
+        padding: 0 4rem;
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+
+    .button {
+        width: 70%;
+        padding-top: 40px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        .btn {
+            padding: 10px;
+            font-size: 15px;
+            font-weight: 600;
+            width: 57%;
+            border-radius: 10px;
+        }
+    }
+}
+
+
+
+@media (max-width: 350.98px) {
+    .title {
+        letter-spacing: 4px;
+        font-size: 16px;
+        display: flex;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        padding-left: 20px;
+        padding-top: 50px;
+        padding-bottom: 3rem;
+
+    }
+
+    .maincontent {
+
+
+        .why-wrapper {
+            &:hover {
+                transform: scale(1.05);
+            }
+
+
+            .titlewhy {
+                font-size: 1rem;
+                color: #eaeaea;
+                background-color: #242424;
+
+            }
+
+            p {
+                font-size: 11px;
+                background-color: #242424;
+                color: #c1bebe;
+            }
+
+            .emogi {
+                font-size: 40px;
+            }
+
+
+        }
+    }
+
+    .button {
+        width: 60%;
+        padding-top: 40px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        .btn {
+            padding: 6px;
+            font-size: 12px;
+            font-weight: 600;
+            width: 57%;
+            border-radius: 10px;
+            letter-spacing: 2px;
+        }
     }
 }

@@ -7,13 +7,13 @@ import './social.scss'
 
 function Social() {
   return (
-    <section className="social">
+    <section id="social">
       <div className="icons-s">
-        <CiFacebook size={50} className="icon1" />
-        <FaInstagram size={50} className="icon2" />
-        <AiFillLinkedin size={50} className="icon3" />
-        <RiTiktokFill size={50} className="icon4" />
-        <FaTelegram size={50} className="icon5" />
+        <CiFacebook size={50} className="icon" />
+        <FaInstagram size={50} className="icon" />
+        <AiFillLinkedin size={50} className="icon" />
+        <RiTiktokFill size={50} className="icon" />
+        <FaTelegram size={50} className="icon" />
       </div>
     </section>
   )

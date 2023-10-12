@@ -1,8 +1,10 @@
-.social {
+#social {
     display: flex;
     align-items: center;
     justify-content: center;
-    margin: 5rem;
+    background-color: #191818;
+    padding-top: 4rem;
+    padding-bottom: 6rem;
 
     .icons-s {
         display: flex;
@@ -11,9 +13,86 @@
 
     }
 
-    .icons-s:hover {
-        animation: wiggle 2s linear infinite;
+    .icon:hover {
+        animation-name: wave-animation;
+        animation-duration: 3.0s;
+        animation-iteration-count: infinite;
+        transform-origin: 70% 70%;
     }
 
+    @keyframes wave-animation {
+        0% {
+            transform: rotate(0.0deg)
+        }
 
+        10% {
+            transform: rotate(14.0deg)
+        }
+
+        20% {
+            transform: rotate(-8.0deg)
+        }
+
+        30% {
+            transform: rotate(14.0deg)
+        }
+
+        40% {
+            transform: rotate(-4.0deg)
+        }
+
+        50% {
+            transform: rotate(10.0deg)
+        }
+
+        60% {
+            transform: rotate(0.0deg)
+        }
+
+        100% {
+            transform: rotate(0.0deg)
+        }
+
+
+
+    }
+}
+
+// .icon:hover {
+//     transform: scale(1.3);
+//     transition: 1s ease-out;
+// }
+
+
+
+
+
+@media (max-width: 443.98px) {
+    .icons-s {
+        display: flex;
+        // flex-direction: column;
+
+        .icon {
+            width: 30px;
+        }
+    }
+}
+
+@media (max-width: 358.98px) {
+
+    .social {
+        padding-top: 1px;
+        padding-bottom: 30px;
+
+        .icons-s {
+            display: grid;
+
+            grid-template-columns: 1fr 1fr 1fr;
+
+            .icon {
+                width: 30px;
+
+            }
+        }
+    }
 }

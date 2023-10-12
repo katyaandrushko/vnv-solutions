@@ -18,7 +18,7 @@ function ServiceItem({ title, description, features, img }) {
             </li>
           ))}
         </ul>
-        <button className="button">Детальніше</button>
+        <button className="btn">Детальніше</button>
         <div className="left">{img}</div>
       </div>
     </>
