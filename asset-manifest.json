@@ -1,10 +1,10 @@
 {
   "files": {
-    "main.css": "/static/css/main.8db585b1.css",
-    "main.js": "/static/js/main.f55c3d2a.js",
-    "index.html": "/index.html",
-    "main.8db585b1.css.map": "/static/css/main.8db585b1.css.map",
-    "main.f55c3d2a.js.map": "/static/js/main.f55c3d2a.js.map"
+    "main.css": "/vnv-solutions/static/css/main.8db585b1.css",
+    "main.js": "/vnv-solutions/static/js/main.f55c3d2a.js",
+    "index.html": "/vnv-solutions/index.html",
+    "main.8db585b1.css.map": "/vnv-solutions/static/css/main.8db585b1.css.map",
+    "main.f55c3d2a.js.map": "/vnv-solutions/static/js/main.f55c3d2a.js.map"
   },
   "entrypoints": [
     "static/css/main.8db585b1.css",
