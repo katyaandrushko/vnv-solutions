@@ -21,24 +21,30 @@
 
 .maincontent {
     background-color: #191818;
-    display: flex;
+
     gap: 30px;
-    flex-wrap: wrap;
-    justify-content: center;
+
+
     padding: 0 4rem;
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    flex-direction: column;
+    grid-template-columns: repeat(2, 1fr);
+
+
+
     text-align: center;
-    justify-content: center;
+
 
 
 
     .why-wrapper {
+
         justify-content: center;
         align-items: center;
         height: 100%;
-        padding: 20px;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        padding: 10px 15px;
         border-radius: 10px;
         transition: all 0.3s ease;
         background-color: #242424;
@@ -64,60 +70,23 @@
             padding-bottom: 20px;
         }
 
-        .emogi {
-            font-size: 3rem;
-            background-color: #242424;
+
+
+        .emoji {
+            font-size: 40px;
+            transition: all 0.3s ease;
+
+            .emogi {
+                transition: all 0.3s ease;
+            }
+
+            .emogi:hover {}
 
         }
 
         .emoji:hover {
-            animation-name: wave-animation;
-            animation-duration: 3.0s;
-            animation-iteration-count: infinite;
-            transform-origin: 70% 70%;
+            transform: scale(1.5);
         }
-
-
-
-        @keyframes wave-animation {
-            0% {
-                transform: rotate(0.0deg)
-            }
-
-            10% {
-                transform: rotate(14.0deg)
-            }
-
-            20% {
-                transform: rotate(-8.0deg)
-            }
-
-            30% {
-                transform: rotate(14.0deg)
-            }
-
-            40% {
-                transform: rotate(-4.0deg)
-            }
-
-            50% {
-                transform: rotate(10.0deg)
-            }
-
-            60% {
-                transform: rotate(0.0deg)
-            }
-
-            100% {
-                transform: rotate(0.0deg)
-            }
-
-
-
-        }
-
-
-
 
 
 
@@ -151,20 +120,14 @@
         flex-wrap: wrap;
         justify-content: center;
         display: grid;
-        grid-template-columns: repeat(2, 1fr);
+        grid-template-columns: repeat(1, 1fr);
 
 
 
 
         .why-wrapper {
 
-            &:hover {
-                transform: scale(1.05);
-            }
 
-            @media (max-width: 768px) {
-                flex: 0 0 calc(100% - 20px); // Змінюємо розмір для мобільних пристроїв, 1 комірка в ряд
-            }
 
             .titlewhy {
                 font-size: 1.5rem;
@@ -179,59 +142,7 @@
                 color: #c1bebe;
             }
 
-            .emoji {
-                font-size: 3rem;
-                background-color: #242424;
-            }
 
-            .emogi {
-                font-size: 3rem;
-                background-color: #242424;
-            }
-
-            .emoji:hover {
-                animation-name: wave-animation;
-                animation-duration: 3.0s;
-                animation-iteration-count: infinite;
-                transform-origin: 70% 70%;
-            }
-
-            @keyframes wave-animation {
-                0% {
-                    transform: rotate(0.0deg)
-                }
-
-                10% {
-                    transform: rotate(14.0deg)
-                }
-
-                20% {
-                    transform: rotate(-8.0deg)
-                }
-
-                30% {
-                    transform: rotate(14.0deg)
-                }
-
-                40% {
-                    transform: rotate(-4.0deg)
-                }
-
-                50% {
-                    transform: rotate(10.0deg)
-                }
-
-                60% {
-                    transform: rotate(0.0deg)
-                }
-
-                100% {
-                    transform: rotate(0.0deg)
-                }
-
-
-
-            }
 
 
 
@@ -257,12 +168,11 @@
 
 
     .maincontent {
+        grid-template-columns: repeat(1, 1fr);
 
         .why-wrapper {
 
-            &:hover {
-                transform: scale(1.05);
-            }
+
 
 
 
@@ -347,11 +257,14 @@
             border-radius: 10px;
         }
     }
+
+
+
 }
 
 
 
-@media (max-width: 350.98px) {
+@media (max-width: 351.98px) {
     .title {
         letter-spacing: 4px;
         font-size: 16px;
@@ -412,4 +325,7 @@
             letter-spacing: 2px;
         }
     }
+
+
+
 }

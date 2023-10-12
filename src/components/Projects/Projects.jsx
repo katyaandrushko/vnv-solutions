@@ -68,7 +68,7 @@ function Projects() {
               id="Video Wrapper "
               autoplay="true"
               loop="true"
-              muted=""
+              muted="true"
               playsinline=""
               className="video-sl"
             >

@@ -709,8 +709,6 @@
                 .services-top {
                     justify-content: start;
 
-
-
                     .top-circles {
 
 
@@ -737,7 +735,7 @@
 
                 display: flex;
                 flex-direction: column;
-                // padding-left: 10px;
+
 
                 .services-item-landing {
 
@@ -864,103 +862,8 @@
 
 
 
-                .services-item-landing {
-
-
-
-                    .services__main--item__text {
-
-
-
-
-                        .services__main--item__text-title {
-                            font-size: 18px;
-                            padding-bottom: 10px;
-                            text-align: center;
-                        }
-
-                        .services__main--item__text-desc {
-                            font-size: 15px;
-                            text-align: center;
-                        }
-
-                        .services__main--item__text-pre-title {
-                            font-size: 16px;
-                        }
-
-                        .services-main_list {
-                            font-size: 13px;
-                        }
-
-                        .btn {
-                            margin-top: 30px;
-                            display: flex;
-                            justify-content: center;
-                            align-items: center;
-                            text-align: center;
-                            width: 50%;
-                            font-size: 13px;
-                            letter-spacing: 1px;
-                        }
-
-
-
-                    }
-
-
-                }
-
-                .services-item-corporat {
-
-
-
-                    .services__main--item__text {
-
-
-
-
-                        .services__main--item__text-title {
-                            font-size: 18px;
-                            padding-bottom: 10px;
-                            text-align: center;
-                        }
-
-                        .services__main--item__text-desc {
-                            font-size: 15px;
-                            text-align: center;
-                        }
-
-                        .services__main--item__text-pre-title {
-                            font-size: 16px;
-                        }
-
-                        .services-main_list {
-                            font-size: 13px;
-                        }
-
-                        .btn {
-                            margin-top: 30px;
-                            display: flex;
-                            justify-content: center;
-                            align-items: center;
-                            text-align: center;
-                            width: 50%;
-                            font-size: 13px;
-                            letter-spacing: 1px;
-                        }
-
-
-
-                    }
-
-
-                }
-
-
                 .rightside {
-                    display: flex;
-                    justify-content: center;
-                    align-items: center;
+                    display: none;
 
                     .services-img {
                         width: 400px;
@@ -970,8 +873,9 @@
                 }
 
                 .btn {
-                    font-size: 12px;
+                    font-size: 10px;
                     letter-spacing: 1px;
+
                 }
 
             }

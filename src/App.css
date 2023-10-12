@@ -9,7 +9,7 @@
 }
 
 body {
-  font-family: 'PT Sans', sans-serif;
+  font-family: 'Montserrat';
 }
 
 li,
@@ -41,6 +41,7 @@ a {
   transition: ease-out 0.6s;
   letter-spacing: 3px;
   text-transform: uppercase;
+  font-family: 'Montserrat';
 }
 
 .btn:hover {

@@ -89,7 +89,6 @@ function Contact() {
                       id="user_number"
                       placeholder="Номер телефону"
                       required
-                      className="type-input"
                     />
                   </>
                 )}
@@ -114,7 +113,6 @@ function Contact() {
                       name="user_email"
                       id="user_email"
                       placeholder="WhatsApp"
-                      WhatsApp
                       required
                     />
                   </>
@@ -131,10 +129,7 @@ function Contact() {
                     />
                   </>
                 )}
-
-                <button className="btn" type="submit">
-                  Надіслати
-                </button>
+                <button className="btn-contact">Надіслати</button>
               </form>
             </div>
           </div>

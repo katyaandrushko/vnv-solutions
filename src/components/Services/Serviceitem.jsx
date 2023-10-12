@@ -18,7 +18,16 @@ function ServiceItem({ title, description, features, img }) {
             </li>
           ))}
         </ul>
-        <button className="btn">Детальніше</button>
+        <button
+          className="btn"
+          onClick={() => {
+            document
+              .getElementById('contact')
+              .scrollIntoView({ behavior: 'smooth' })
+          }}
+        >
+          Детальніше
+        </button>
         <div className="left">{img}</div>
       </div>
     </>

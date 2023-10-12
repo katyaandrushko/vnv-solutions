@@ -11,7 +11,16 @@ function Main() {
           </h1>
         </div>
         <div className="mains">
-          <button className="btn">Замовити зараз</button>
+          <button
+            className="btn"
+            onClick={() => {
+              document
+                .getElementById('contact')
+                .scrollIntoView({ behavior: 'smooth' })
+            }}
+          >
+            Замовити зараз
+          </button>
         </div>
       </div>
     </section>
