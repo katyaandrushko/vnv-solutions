@@ -1,19 +1,26 @@
-import React from 'react'
+import React, { useState, useEffect } from 'react'
 import './leadmagnet.scss'
-import { useState } from 'react'
 
 function LeadMagnet() {
-  const [showWidget, setShowWidget] = useState(true)
+  const [showWidget, setShowWidget] = useState(false)
+
+  useEffect(() => {
+    const timer = setTimeout(() => {
+      setShowWidget(true)
+    }, 2000)
+
+    return () => {
+      clearTimeout(timer)
+    }
+  }, [])
 
   const closeWidget = () => {
-    setTimeout(() => {
-      setShowWidget(false)
-    }, 300)
+    setShowWidget(false)
   }
 
   return (
     showWidget && (
-      <div className={`leadmagnet set`}>
+      <div className="leadmagnet">
         <a href="#contact">
           <span>Отримати безкоштовний чеклист!</span>
         </a>

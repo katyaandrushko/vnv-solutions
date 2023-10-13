@@ -1,18 +1,3 @@
-.logo-img {
-    width: 150px;
-    height: 152px;
-}
-
-@media (max-width: 200.98px) {
-    .logo-img {
-        display: none;
-
-    }
-}
-
-
-
-
 .navbars {
     padding: 0 30px;
     width: 100vw;
@@ -22,76 +7,59 @@
     justify-content: space-between;
     align-items: center;
 
-}
-
-.navig {}
-
-
-.nav-links {
-    display: flex;
-    align-items: center;
-    justify-content: flex-end;
-    gap: 40px;
-}
-
-ul.nav-links li {
-    list-style: none;
-    text-decoration: none;
-
-
-}
-
-ul.nav-links li a {
-    text-decoration: none;
-    color: rgb(232, 231, 231);
-
-    font-size: 20px;
-    text-transform: uppercase;
-
-}
-
-ul.nav-links li a:hover {
-    transform: scale(1.3);
-    transition: 1s ease-out;
-}
-
-.nav-item:hover {
-    transform: scale(1.3);
-    transition: 1s ease-out;
-}
-
-@media (max-width: 1090.98px) {
+    .logo-img {
+        width: 150px;
+        height: 152px;
+    }
 
     .nav-links {
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        gap: 40px;
 
-        gap: 20px;
+        li {
+            list-style: none;
+            text-decoration: none;
+
+            a {
+                text-decoration: none;
+                color: rgb(232, 231, 231);
+
+                font-size: 20px;
+                text-transform: uppercase;
+            }
+
+            a:hover {
+                transform: scale(1.3);
+                transition: 1s ease-out;
+            }
+        }
     }
 
-
-
-    ul.nav-links li a {
-        text-decoration: none;
-        color: rgb(232, 231, 231);
-
-        font-size: 18px;
-        text-transform: uppercase;
-
+    .nav-item:hover {
+        transform: scale(1.3);
+        transition: 1s ease-out;
     }
 }
 
+@media (max-width: 1100.98px) {
+    .navbars {
+        .nav-links {
+            gap: 17px;
+
+            li a {
+                font-size: 17px;
+            }
+        }
+    }
+}
 
 @media (max-width: 1024.98px) {
-    .nav {
-        // position: relative;
-        // position: fixed;
-        // z-index: 100;
-    }
-
     .navbars {
         padding: 0 20px;
         position: absolute;
         z-index: 1;
-        // position: fixed;
         top: 0;
         left: 0;
         width: 100%;
@@ -100,394 +68,119 @@ ul.nav-links li a:hover {
         justify-content: space-between;
         align-items: center;
 
+
+        .menu-togle {
+            cursor: pointer;
+
+            .hamBox {
+                position: relative;
+                width: 44px;
+                height: 44px;
+                cursor: pointer;
+                border-radius: 50%;
+                transition: 0.3s ease;
+                padding: 2.4em;
+            }
+
+            .hambox:hover {
+                background: #2c2b2b;
+            }
+
+            .hamBoxOpen {
+                background: #2c2b2b;
+            }
+
+            .lineTop,
+            .lineBottom {
+                margin: 0 auto;
+                position: absolute;
+                display: block;
+                width: 24px;
+                height: 2px;
+                border-radius: 10px;
+                background: #858383;
+                left: 0;
+                right: 0;
+                transform: rotate(0deg);
+                transition: all 0.4s;
+            }
+
+            .lineTop {
+                top: 2.2em;
+            }
+
+            .lineBottom {
+                bottom: 2.2em;
+            }
+
+            .lineTop .spin {
+                top: 2.35em;
+                transform: rotate(225deg);
+                background: #2c2b2b;
+            }
+        }
+
+
+        .nav-overlay {
+            position: fixed;
+            background-color: #191818;
+            z-index: -5;
+            top: -100%;
+            left: 0;
+            width: 100%;
+            height: 100vh;
+            padding: 4em;
+            overflow: hidden;
+            transition: all 2s cubic-bezier(0.16, 1, 0.3, 1);
+
+
+            ul.nav-links {
+                position: absolute;
+                top: 60%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                margin: 0;
+                padding: 0;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+
+                li a {
+                    background-color: #191818;
+                    text-decoration: none;
+                    color: #fff;
+                    font-size: 2em;
+                    position: relative;
+                    top: 0;
+                    transition: all 2s cubic-bezier(0.16, 1, 0.3, 1);
+                }
+            }
+        }
     }
+}
 
-    .menu-togle {
-        cursor: pointer;
-    }
+@media (max-width: 679.98px) {
+    .navbars {
+        z-index: 4;
 
-    .nav-overlay {
-        position: fixed;
-        background-color: #191818;
+        .nav-overlay {
 
-        z-index: -5;
-        top: -100%;
-        left: 0;
-        width: 100%;
-        height: 100vh;
-        padding: 4em;
-        overflow: hidden;
-        transition: all 2s cubic-bezier(0.16, 1, 0.3, 1);
-    }
+            ul.nav-links {
 
-    .hamBox {
-        position: relative;
-        width: 44px;
-        height: 44px;
-        cursor: pointer;
-        border-radius: 50%;
-        transition: 0.3s ease;
-        padding: 2.4em;
-    }
+                li a {
 
-    .hambox:hover {
-        background: #2c2b2b;
-
-    }
-
-    .hamBoxOpen {
-        background: #2c2b2b;
-    }
-
-    .lineTop,
-    .lineBottom {
-        margin: 0 auto;
-        position: absolute;
-        display: block;
-        width: 24px;
-        height: 2px;
-        border-radius: 10px;
-        background: #858383;
-        left: 0;
-        right: 0;
-        transform: rotate(0deg);
-        transition: all 0.4s;
-    }
-
-    .lineTop {
-        top: 2.2em;
-    }
-
-    .lineBottom {
-        bottom: 2.2em;
-    }
-
-    .lineTop .spin {
-        top: 2.35em;
-        transform: rotate(225deg);
-        background: #2c2b2b;
+                    transition: none;
+                }
+            }
+        }
     }
 
     ul.nav-links {
         position: absolute;
         top: 60%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        margin: 0;
-        padding: 0;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-
-    }
-
-
-    ul.nav-links li a {
-        background-color: #191818;
-        text-decoration: none;
-        color: #fff;
-        font-size: 2em;
-        position: relative;
-        top: 0;
-        transition: all 2s cubic-bezier(0.16, 1, 0.3, 1);
-    }
-}
-
-@media (max-width: 679.98px) {
-
-    .navbars {
-
-        position: absolute;
-        z-index: 4;
-        top: 1;
-        padding-bottom: 40px;
-        left: 0;
-        width: 100vw;
-        overflow: hidden;
-        display: flex;
-        justify-content: space-around;
-        align-items: center;
-        background-color: #191818;
-
-    }
-
-    .menu-togle {
-        cursor: pointer;
-    }
-
-    .nav-overlay {
-        position: fixed;
-        background-color: #191818;
-        ///
-        height: 100%;
-        z-index: -5;
-        top: -100%;
-        left: 0;
-        max-width: 100vw;
-        height: 90%;
-        padding: 0;
-        overflow: hidden;
-        transition: all 2s cubic-bezier(0.16, 1, 0.3, 1);
-
-    }
-
-    .hamBox {
-        position: relative;
-        width: 44px;
-        height: 44px;
-        cursor: pointer;
-        border-radius: 50%;
-        transition: 0.3s ease;
-        padding: 2.4em;
-    }
-
-    .hambox:hover {
-        background: #2c2b2b;
-
-    }
-
-    .hamBoxOpen {
-        background: #2c2b2b;
-    }
-
-    .lineTop,
-    .lineBottom {
-        margin: 0 auto;
-        position: absolute;
-        display: block;
-        width: 24px;
-        height: 2px;
-        border-radius: 10px;
-        background: #858383;
-        left: 0;
-        right: 0;
-        transform: rotate(0deg);
-        transition: all 0.4s;
-    }
-
-    .lineTop {
-        top: 2.2em;
-    }
-
-    .lineBottom {
-        bottom: 2.2em;
-    }
-
-    .lineTop .spin {
-        top: 2.35em;
-        transform: rotate(225deg);
-        background: #2c2b2b;
-    }
-
-    ul.nav-links {
-        position: absolute;
-        top: 50%;
         text-align: center;
         font-size: 10px;
         gap: 20px;
-
-    }
-
-
-    ul.nav-links li a {
-        background-color: #191818;
-        text-decoration: none;
-        color: #fff;
-        font-size: 2em;
-        position: relative;
-        top: 0;
-        transition: all 0.5s cubic-bezier(0.16, 1, 0.3, 1);
-        transition: none;
-    }
-}
-
-// @media (max-width: 360.98px) {
-//     .nav {
-//         // position: relative;
-//         // position: fixed;
-//         // z-index: 100;
-
-//     }
-
-//     .navbars {
-
-//         position: absolute;
-//         z-index: 4;
-//         // position: fixed;
-//         top: 1;
-//         padding-bottom: 40px;
-//         left: 0;
-//         width: 100vw;
-//         overflow: hidden;
-//         display: flex;
-//         justify-content: space-around;
-//         align-items: center;
-//         background-color: #191818;
-
-//     }
-
-//     .menu-togle {
-//         cursor: pointer;
-//     }
-
-//     .nav-overlay {
-//         position: fixed;
-//         background-color: #191818;
-
-//         z-index: -5;
-//         top: -100%;
-//         left: 0;
-//         max-width: 100vw;
-//         height: 100vh;
-//         padding: 0;
-//         overflow: hidden;
-//         transition: all 2s cubic-bezier(0.16, 1, 0.3, 1);
-//     }
-
-//     .hamBox {
-//         position: relative;
-//         width: 44px;
-//         height: 44px;
-//         cursor: pointer;
-//         border-radius: 50%;
-//         transition: 0.3s ease;
-//         padding: 2.4em;
-//     }
-
-//     .hambox:hover {
-//         background: #2c2b2b;
-
-//     }
-
-//     .hamBoxOpen {
-//         background: #2c2b2b;
-//     }
-
-//     .lineTop,
-//     .lineBottom {
-//         margin: 0 auto;
-//         position: absolute;
-//         display: block;
-//         width: 24px;
-//         height: 2px;
-//         border-radius: 10px;
-//         background: #858383;
-//         left: 0;
-//         right: 0;
-//         transform: rotate(0deg);
-//         transition: all 0.4s;
-//     }
-
-//     .lineTop {
-//         top: 2.2em;
-//     }
-
-//     .lineBottom {
-//         bottom: 2.2em;
-//     }
-
-//     .lineTop .spin {
-//         top: 2.35em;
-//         transform: rotate(225deg);
-//         background: #2c2b2b;
-//     }
-
-//     ul.nav-links {
-//         position: absolute;
-//         top: 60%;
-//         left: 50%;
-//         transform: translate(-50%, -50%);
-//         margin: 0;
-//         padding: 0;
-
-
-
-//         text-align: center;
-//         font-size: 10px;
-//         gap: 10px;
-
-//     }
-
-
-//     ul.nav-links li a {
-//         background-color: #191818;
-//         text-decoration: none;
-//         color: #fff;
-//         font-size: 2em;
-//         position: relative;
-//         top: 0;
-//         transition: all 2s cubic-bezier(0.16, 1, 0.3, 1);
-//     }
-// }
-
-@media (max-width: 377.98px) {
-    .nav {
-        // position: relative;
-        // position: fixed;
-        // z-index: 100;
-        padding: 0;
-
-        margin: 0;
-        background: #191818
-    }
-
-    .navbars {
-
-        position: absolute;
-        z-index: 4;
-        // position: fixed;
-        top: 1;
-        padding-bottom: 40px;
-        left: 0;
-        right: 0;
-        width: 100vw;
-        overflow: hidden;
-        display: flex;
-        justify-content: space-around;
-        align-items: center;
-        background-color: #191818;
-
-    }
-
-    .menu-togle {
-        cursor: pointer;
-        background: #191818
-    }
-
-    .nav-overlay {
-        position: fixed;
-        background-color: #191818;
-        background: #191818;
-        z-index: -5;
-        top: -100%;
-        left: 0;
-        max-width: 100vw;
-        height: 100vh;
-
-        padding: 0;
-        overflow: hidden;
-        transition: all 2s cubic-bezier(0.16, 1, 0.3, 1);
-    }
-
-
-
-
-    ul.nav-links {
-        position: absolute;
-        top: 50%;
-        gap: 20px;
-
-    }
-
-
-    ul.nav-links li a {
-        background-color: #191818;
-        text-decoration: none;
-        color: #fff;
-        font-size: 2em;
-        position: relative;
-        top: 0;
-        transition: all 2s cubic-bezier(0.16, 1, 0.3, 1);
     }
 }

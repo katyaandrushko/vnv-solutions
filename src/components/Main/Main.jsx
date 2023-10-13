@@ -1,5 +1,6 @@
 import React from 'react'
 import './main.scss'
+import Button from '../Button/Button'
 
 function Main() {
   return (
@@ -10,18 +11,7 @@ function Main() {
             Easy, quality, IT - winning <span>solutions</span> for your business
           </h1>
         </div>
-        <div className="mains">
-          <button
-            className="btn"
-            onClick={() => {
-              document
-                .getElementById('contact')
-                .scrollIntoView({ behavior: 'smooth' })
-            }}
-          >
-            Замовити зараз
-          </button>
-        </div>
+        <Button buttonText={'Замовити зараз'} />
       </div>
     </section>
   )

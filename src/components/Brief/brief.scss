@@ -2,11 +2,8 @@
     padding: 1rem 3rem;
     height: auto;
     background-color: #303030;
-
-
     display: flex;
     justify-content: space-around;
-
 
     .left {
         padding: 0 2rem;
@@ -14,48 +11,30 @@
         flex: 1;
         flex-direction: column;
 
-
-
-
         .desc {
             padding: 6rem 0;
             display: flex;
             flex-direction: column;
             gap: 30px;
 
-
-
-
             .b-title {
                 font-weight: 500;
-
             }
 
             .b-subtitle {
-
                 font-weight: 400;
-
             }
 
             .lorem {
                 font-style: italic;
                 font-weight: 200;
-
-
-
             }
-
-
-
-
         }
 
         .b-btn {
             margin-bottom: 3rem;
 
         }
-
-
     }
 
     .right {
@@ -67,29 +46,9 @@
         gap: 40px;
 
         .wing {
-
             width: 200px;
             height: 200px;
-
         }
-
-    }
-
-    .right {
-        display: flex;
-
-        text-align: center;
-        align-items: center;
-        justify-content: center;
-
-        .email {
-            text-align: center;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            width: 500px;
-        }
-
     }
 }
 
@@ -101,12 +60,7 @@
         gap: 20px;
         justify-content: center;
 
-
-
-
         .left {
-
-
 
             .desc {
                 padding-top: 3rem;
@@ -114,36 +68,20 @@
                 flex-direction: column;
                 gap: 30px;
 
-
                 .b-title {
                     font-weight: 500;
-
                 }
 
                 .b-subtitle {
-
                     font-weight: 400;
                     font-size: 19px;
-
                 }
 
                 .lorem {
-
                     font-weight: 200;
                     font-style: italic;
-
                 }
-
-
-
             }
-
-            .b-btn {
-                margin-bottom: 3rem;
-
-            }
-
-
         }
 
         .right {
@@ -152,14 +90,6 @@
             text-align: center;
             align-items: center;
             justify-content: center;
-
-            .email {
-                text-align: center;
-                display: flex;
-                align-items: center;
-                justify-content: center;
-            }
-
         }
     }
 }
@@ -172,37 +102,9 @@
         flex-direction: column;
         text-align: center;
 
-        .left {
-
-
-            .desc {
-
-                .b-title {}
-
-                .b-subtitle {}
-
-                .lorem {}
-
-
-
-            }
-
-            .b-btn {}
-
-
-        }
-
         .right {
-
-
-            .email {
-
-                width: 400px;
-            }
-
+            padding-top: 2.5rem;
         }
-
-
     }
 }
 
@@ -210,37 +112,6 @@
     .brief {
         padding-left: 20px;
         padding-right: 20px;
-
-        .rectangable {
-
-
-
-            .desc {
-
-
-
-                .b-title {
-                    font-size: 20px;
-                }
-
-                .b-subtitle {}
-
-                .lorem {
-                    width: 400px;
-                    font-size: 17px;
-                }
-
-
-
-            }
-
-            .b-btn {}
-
-
-
-
-
-        }
     }
 }
 
@@ -250,11 +121,9 @@
 
         .left {
             width: 100%;
-            // padding-left: 10px;
-            // padding-right: 20px;
 
             .desc {
-                padding-top: 1px;
+                padding-top: 1rem;
 
                 .b-title {
                     font-size: 20px;
@@ -265,38 +134,8 @@
                 }
 
                 .lorem {
-
                     font-size: 15px;
                 }
-
-
-
-            }
-
-            .b-btn {
-                display: flex;
-                align-items: center;
-                justify-content: center;
-                text-align: center;
-
-                .btn {
-                    font-size: 11px;
-                }
-            }
-
-
-
-
-
-        }
-
-        .right {
-
-
-            .email {
-                width: 200px;
-                height: 200px;
-
             }
         }
     }
@@ -307,59 +146,29 @@
 
         text-align: center;
 
+
         .left {
-            width: 100%;
             display: flex;
             text-align: center;
             justify-content: center;
 
-
             .desc {
 
-                .b-title {
-                    font-size: 15px;
 
+                .b-title {
+
+                    font-size: 15px;
                 }
 
                 .b-subtitle {
-
                     font-size: 15px;
-
-
                 }
 
                 .lorem {
-
                     font-size: 13px;
-
-
-
-                }
-
-
-
-
-            }
-
-            .b-btn {
-
-
-                .btn {
-                    padding: 4px 6px;
-                    font-size: 10px;
                 }
             }
-
-
-
-
         }
-
-
-
-
-
-
     }
 }
 
@@ -368,55 +177,23 @@
 
         .left {
 
-            display: flex;
-            text-align: center;
-
             .desc {
 
                 .b-title {
                     padding-top: 19px;
-                    font-size: 15px;
-
-                }
-
-                .b-subtitle {
-
-                    font-size: 15px;
-
-
                 }
 
                 .lorem {
-
                     display: none;
-
-
-
-                }
-
-
-
-
-            }
-
-            .b-btn {
-
-
-                .btn {
-                    padding: 4px 6px;
-                    font-size: 10px;
                 }
             }
-
-
-
-
         }
 
         .right {
-            display: none;
+            .wing {
+                width: 100px;
+                height: 100px;
+            }
         }
-
-
     }
 }

@@ -4,12 +4,13 @@ import ServiceItem from './Serviceitem'
 
 function Services() {
   const sections = [
-    { id: 'landing', label: 'Landing page' },
+    { id: 'landing', label: 'Лендинг сторінка' },
     { id: 'corporat', label: 'Багатосторінковий сайт' },
     { id: 'shop', label: 'Інтернет магазин' },
     { id: 'audit', label: 'Аудит сайту' },
     { id: 'consultation', label: 'Індивідуальна консультація' },
   ]
+
   const serviceData = [
     {
       id: 'landing',
@@ -25,7 +26,6 @@ function Services() {
 
     {
       id: 'corporat',
-
       title: 'Багатосторінковий сайт',
       description:
         'Завдяки зручності такого формату, можна легко подати користувачу всю важливу інформацію та швидко підвести його до покупки',
@@ -70,6 +70,7 @@ function Services() {
       ],
     },
   ]
+
   const [activeSection, setActiveSection] = useState('landing')
   const handleButtonClick = (sectionId) => {
     setActiveSection(sectionId)
@@ -78,48 +79,46 @@ function Services() {
     <section id="services">
       <div className="container">
         <h1 className="services-title">Послуги</h1>
-        <div className="services-screen">
-          <div className="services-top">
-            <div class="top-circles">
-              <span className="dot"></span>
-              <span className="dot"></span>
-              <span className="dot"></span>
-            </div>
-            <div class="services_top_btns">
-              {sections.map((section) => (
-                <span
-                  key={sections.id}
-                  className={`services_top_btn ${
-                    activeSection === section.id ? 'active' : ''
-                  }`}
-                  onClick={() => handleButtonClick(section.id)}
-                >
-                  {section.label}
-                </span>
-              ))}
-            </div>
+        <div className="services-top">
+          <div class="top-circles">
+            <span className="dot"></span>
+            <span className="dot"></span>
+            <span className="dot"></span>
           </div>
-          <div className="services-main">
-            {serviceData.map((service) => (
-              <div
-                key={service.id}
-                className={`services-item-${service.id} ${
-                  activeSection === service.id ? 'active' : ''
+          <div class="services_top_btns">
+            {sections.map((section) => (
+              <span
+                key={sections.id}
+                className={`services_top_btn ${
+                  activeSection === section.id ? 'active' : ''
                 }`}
-                style={{ width: activeSection === service.id ? '100%' : '0%' }}
+                onClick={() => handleButtonClick(section.id)}
               >
-                {activeSection === service.id && (
-                  <ServiceItem
-                    title={service.title}
-                    description={service.description}
-                    features={service.features}
-                  />
-                )}
-              </div>
+                {section.label}
+              </span>
             ))}
-            <div className="rightside">
-              <img src="./assets/pict.png" alt="" className="services-img" />
+          </div>
+        </div>
+        <div className="services-main">
+          {serviceData.map((service) => (
+            <div
+              key={service.id}
+              className={`services-item ${
+                activeSection === service.id ? 'active' : ''
+              }`}
+              style={{ width: activeSection === service.id ? '100%' : '0%' }}
+            >
+              {activeSection === service.id && (
+                <ServiceItem
+                  title={service.title}
+                  description={service.description}
+                  features={service.features}
+                />
+              )}
             </div>
+          ))}
+          <div className="rightside">
+            <img src="./assets/pict.png" alt="" className="services-img" />
           </div>
         </div>
       </div>

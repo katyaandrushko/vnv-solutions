@@ -6,7 +6,9 @@ function Brief() {
     <section className="brief">
       <div className="right">
         <img src="./assets/pngwing.png" alt="" className="wing" />
-        <button className="btn">Заповнити зараз</button>
+        <a href="https://docs.google.com/forms/d/e/1FAIpQLSeHdiAuLb7U5vG9ABsxZrEzQ8m1DMLCz_CUChVl6kgK4cSx2A/viewform?usp=sf_link">
+          <button className="btn">Заповнити зараз</button>
+        </a>
       </div>
       <div className="left">
         <div className="desc">

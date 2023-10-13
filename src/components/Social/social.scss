@@ -10,9 +10,6 @@
     .icons-s {
         display: flex;
         gap: 30px;
-
-
-
     }
 
     .icon:hover {
@@ -54,14 +51,8 @@
         100% {
             transform: rotate(0.0deg)
         }
-
-
-
     }
 }
-
-
-
 
 @media (max-width: 449.98px) {
 
@@ -83,13 +74,7 @@
         padding-top: 10px;
 
         .icons-s {
-            display: grid;
             grid-template-columns: repeat(2, 2fr);
-
-            .icon {
-                width: 30px;
-
-            }
         }
     }
 }

@@ -1,102 +1,55 @@
-import React from 'react'
-import { useState } from 'react'
+import React, { useState } from 'react'
 import './nav.scss'
 
 function Nav() {
   const [navOpen, setNavOpen] = useState(false)
+
+  const toggleNav = () => {
+    setNavOpen(!navOpen)
+  }
+
+  const navLinks = [
+    { href: '#whywe', text: 'Чому ми', delay: '0.8s' },
+    { href: '#services', text: 'Послуги', delay: '0.9s' },
+    { href: '#projects', text: 'Наші проєкти', delay: '1s' },
+    { href: '#contact', text: 'Контакти', delay: '1.1s' },
+    { href: '#social', text: 'Соціальні мережі', delay: '1.2s' },
+  ]
+
   return (
     <nav className="nav">
-      <div className="navig">
-        <div className="navbars">
-          <div className="logo">
-            <a href="#main">
-              <img src="./assets/logo.png" alt="Logo" className="logo-img" />
-            </a>
-          </div>
+      <div className="navbars">
+        <div className="logo">
+          <a href="#main">
+            <img src="./assets/logo.png" alt="Logo" className="logo-img" />
+          </a>
+        </div>
 
-          <div className="menu-togle" onClick={() => setNavOpen(!navOpen)}>
-            <div className={navOpen ? 'hamBox hamBoxOpen' : 'hamBox'}>
-              <span className={navOpen ? 'lineTop spin' : 'lineTop'}></span>
-              <span
-                className={navOpen ? 'lineBottom spin' : 'lineBottom'}
-              ></span>
-            </div>
+        <div className="menu-togle" onClick={toggleNav}>
+          <div className={`hamBox ${navOpen ? 'hamBoxOpen' : ''}`}>
+            <span className={`lineTop ${navOpen ? 'spin' : ''}`}></span>
+            <span className={`lineBottom ${navOpen ? 'spin' : ''}`}></span>
           </div>
+        </div>
 
-          <div
-            className="nav-overlay"
-            style={{
-              top: navOpen ? '0' : '-100%',
-              transitionDelay: navOpen ? '0s' : '0s',
-            }}
-          >
-            <ul className="nav-links">
-              <li className="nav-item">
+        <div className="nav-overlay" style={{ top: navOpen ? '0' : '-100%' }}>
+          <ul className="nav-links">
+            {navLinks.map((link, index) => (
+              <li className="nav-item" key={index}>
                 <a
-                  href="#whywe"
-                  onClick={() => setNavOpen(!navOpen)}
+                  href={link.href}
+                  onClick={toggleNav}
                   style={{
                     top: navOpen ? '0' : '120px',
-                    transitionDelay: navOpen ? '0.8s' : '0s',
+                    transitionDelay: navOpen ? link.delay : '0s',
                   }}
                   className="nav-item-wrapper"
                 >
-                  Чому ми
+                  {link.text}
                 </a>
               </li>
-              <li className="nav-item">
-                <a
-                  href="#services"
-                  onClick={() => setNavOpen(!navOpen)}
-                  style={{
-                    top: navOpen ? '0' : '120px',
-                    transitionDelay: navOpen ? '0.9s' : '0s',
-                  }}
-                >
-                  Послуги
-                </a>
-                <div className="nav-item-wrapper"></div>
-              </li>
-              <li className="nav-item">
-                <a
-                  href="#projects"
-                  onClick={() => setNavOpen(!navOpen)}
-                  style={{
-                    top: navOpen ? '0' : '120px',
-                    transitionDelay: navOpen ? '1s' : '0s',
-                  }}
-                >
-                  Наші проєкти
-                </a>
-              </li>
-              <li className="nav-item">
-                <a
-                  href="#contact"
-                  onClick={() => setNavOpen(!navOpen)}
-                  style={{
-                    top: navOpen ? '0' : '120px',
-                    transitionDelay: navOpen ? '1.1s' : '0s',
-                  }}
-                  className="nav-item-wrapper"
-                >
-                  Контакти
-                </a>
-              </li>
-              <li className="nav-item">
-                <a
-                  href="#social"
-                  onClick={() => setNavOpen(!navOpen)}
-                  style={{
-                    top: navOpen ? '0' : '120px',
-                    transitionDelay: navOpen ? '1.2s' : '0s',
-                  }}
-                >
-                  Соціальні мережі
-                </a>
-                <div className="nav-item-wrapper"></div>
-              </li>
-            </ul>
-          </div>
+            ))}
+          </ul>
         </div>
       </div>
     </nav>

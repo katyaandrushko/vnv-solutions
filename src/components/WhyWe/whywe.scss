@@ -1,153 +1,11 @@
 #whywe {
     background-color: #191818;
 
-}
-
-.title {
-    letter-spacing: 6px;
-    font-size: 30px;
-    display: flex;
-    padding-left: 5rem;
-    padding-top: 90px;
-    padding-bottom: 4rem;
-    font-weight: 300;
-    background: #f3eeeb;
-    background-clip: text;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-}
-
-
-
-.maincontent {
-    background-color: #191818;
-    gap: 30px;
-    padding: 0 4rem;
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    text-align: center;
-
-
-
-
-    .why-wrapper {
-
-        justify-content: center;
-        align-items: center;
-        height: 100%;
-        display: flex;
-        flex-direction: column;
-        gap: 10px;
-        padding: 10px 15px;
-        border-radius: 10px;
-        transition: all 0.3s ease;
-        background-color: #242424;
-
-
-
-        &:hover {
-            transform: scale(1.05);
-        }
-
-
-
-
-
-        p {
-            font-size: 1rem;
-            background-color: #242424;
-            color: #c1bebe;
-            padding-bottom: 20px;
-        }
-
-
-
-        .emoji {
-            font-size: 40px;
-            transition: all 0.3s ease;
-
-            .emogi {
-                transition: all 0.3s ease;
-            }
-
-            .emogi:hover {}
-
-        }
-
-        .emoji:hover {
-            transform: scale(1.5);
-        }
-
-
-
-
-
-    }
-
-
-}
-
-.button {
-    width: 50%;
-    padding-top: 40px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-
-    .btn {
-        font-size: 17px;
-        font-weight: 600;
-        width: 57%;
-        border-radius: 10px;
-    }
-}
-
-@media (max-width: 950.98px) {
-    .maincontent {
-
-        // display: flex;
-        gap: 30px;
-        flex-wrap: wrap;
-        justify-content: center;
-        display: grid;
-        grid-template-columns: repeat(1, 1fr);
-
-
-
-
-        .why-wrapper {
-
-
-
-            .titlewhy {
-                font-size: 1.5rem;
-                color: #eaeaea;
-                background-color: #242424;
-
-            }
-
-            p {
-                font-size: 1rem;
-                background-color: #242424;
-                color: #c1bebe;
-            }
-
-
-
-
-
-        }
-    }
-}
-
-@media (max-width: 768.98px) {
     .title {
         letter-spacing: 6px;
-        font-size: 25px;
+        font-size: 30px;
         display: flex;
-        padding-left: 3rem;
-        padding-top: 90px;
-        padding-bottom: 3rem;
+        padding: 90px 0 4rem 5rem;
         font-weight: 300;
         background: #f3eeeb;
         background-clip: text;
@@ -155,53 +13,54 @@
         -webkit-text-fill-color: transparent;
     }
 
-
-
     .maincontent {
-        grid-template-columns: repeat(1, 1fr);
+        background-color: #191818;
+        gap: 30px;
+        padding: 0 4rem;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        text-align: center;
 
         .why-wrapper {
+            justify-content: center;
+            align-items: center;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            padding: 10px 15px;
+            border-radius: 10px;
+            transition: all 0.3s ease;
+            background-color: #242424;
 
-
-
-
-
-            .titlewhy {
-                font-size: 1.5rem;
-                color: #eaeaea;
-                background-color: #242424;
-
+            &:hover {
+                transform: scale(1.05);
             }
 
             p {
                 font-size: 1rem;
                 background-color: #242424;
                 color: #c1bebe;
+                padding-bottom: 20px;
             }
 
+            .emoji {
+                font-size: 40px;
+                transition: all 0.3s ease;
 
+                span {
+                    transition: all 0.3s ease;
+                }
+            }
 
-
-
-
-
-
-        }
-
-        .btn {
-            padding: 5px 10px;
-            font-size: 10px;
-            letter-spacing: 1px;
-
+            .emoji:hover {
+                transform: scale(1.5);
+            }
         }
     }
 
-
-}
-
-@media (max-width: 768.98px) {
     .button {
-        width: 60%;
+        width: 50%;
         padding-top: 40px;
         display: flex;
         align-items: center;
@@ -210,132 +69,119 @@
         .btn {
             font-size: 17px;
             font-weight: 600;
-            border-radius: 10px;
-        }
-    }
-}
-
-@media (max-width: 583.98px) {
-    .button {
-        width: 60%;
-        padding-top: 40px;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-
-        .btn {
-            font-size: 15px;
-            font-weight: 600;
-            border-radius: 10px;
-        }
-    }
-}
-
-@media (max-width: 522.98px) {
-
-
-    .title {
-
-        font-size: 19px;
-
-    }
-
-    .maincontent {
-        background-color: #191818;
-        display: flex;
-        gap: 30px;
-        flex-wrap: wrap;
-        justify-content: center;
-        padding: 0 4rem;
-        display: grid;
-        grid-template-columns: repeat(1, 1fr);
-    }
-
-
-    .button {
-        width: 70%;
-        padding-top: 40px;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-
-        .btn {
-            padding: 10px;
-            font-size: 15px;
-            font-weight: 600;
-            width: 57%;
+            width: 50%;
             border-radius: 10px;
         }
     }
 
-
-
 }
 
-@media (max-width: 351.98px) {
-    .title {
-        letter-spacing: 4px;
-        font-size: 16px;
-        display: flex;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        text-align: center;
-        padding-left: 20px;
-        padding-top: 50px;
-        padding-bottom: 3rem;
+@media (max-width: 950.98px) {
+    #whywe {
+        .maincontent {
+            grid-template-columns: repeat(1, 1fr);
+        }
 
+        .button {
+            padding-top: 40px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            .btn {
+                font-size: 15px;
+                font-weight: 600;
+                width: 50%;
+                letter-spacing: 4px
+            }
+        }
     }
+}
 
-    .maincontent {
+@media (max-width: 767.98px) {
+    #whywe {
+        .title {
+            letter-spacing: 4px;
+            font-size: 25px;
+            padding: 10px 10px 30px 50px;
+        }
 
+        .maincontent {
 
-        .why-wrapper {
-            width: 100%;
-
-            &:hover {
-                transform: scale(1.05);
+            .why-wrapper .titlewhy {
+                font-size: 1.4rem;
             }
 
+            p {
+                font-size: 1rem;
+            }
+        }
 
+        .button {
+            padding-top: 40px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            .btn {
+                font-size: 15px;
+                font-weight: 600;
+                width: 50%;
+                letter-spacing: 2px;
+                padding: 10px;
+            }
+        }
+    }
+}
+
+@media (max-width: 519.98px) {
+    #whywe {
+
+
+        .button {
+
+
+            .btn {
+                font-size: 13px;
+                font-weight: 600;
+                width: 60%;
+                letter-spacing: 1px;
+                padding: 9px;
+            }
+        }
+    }
+}
+
+@media (max-width: 390.98px) {
+    #whywe {
+        .title {
+            letter-spacing: 4px;
+            font-size: 16px;
+            padding: 50px 0 3rem 20px;
+        }
+
+        .maincontent .why-wrapper {
             .titlewhy {
                 font-size: 1rem;
-                color: #eaeaea;
-                background-color: #242424;
-
             }
 
             p {
                 font-size: 11px;
-                background-color: #242424;
-                color: #c1bebe;
             }
 
             .emogi {
-                font-size: 40px;
+                font-size: 30px;
             }
+        }
 
+        .button {
+            width: 60%;
 
+            .btn {
+                padding: 10px;
+                font-size: 12px;
+                letter-spacing: 2px;
+            }
         }
     }
-
-    .button {
-        width: 60%;
-        padding-top: 40px;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-
-        .btn {
-            padding: 6px;
-            font-size: 12px;
-            font-weight: 600;
-            width: 57%;
-            border-radius: 10px;
-            letter-spacing: 2px;
-        }
-    }
-
-
-
 }

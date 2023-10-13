@@ -1,5 +1,6 @@
 import { AiOutlineFileDone } from 'react-icons/ai'
 import './services.scss'
+import Button from '../Button/Button'
 
 function ServiceItem({ title, description, features, img }) {
   return (
@@ -18,16 +19,7 @@ function ServiceItem({ title, description, features, img }) {
             </li>
           ))}
         </ul>
-        <button
-          className="btn"
-          onClick={() => {
-            document
-              .getElementById('contact')
-              .scrollIntoView({ behavior: 'smooth' })
-          }}
-        >
-          Детальніше
-        </button>
+        <Button buttonText={'Хочу'} />
         <div className="left">{img}</div>
       </div>
     </>

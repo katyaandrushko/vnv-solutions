@@ -1,57 +1,7 @@
-// .leadMagnet {
-//     position: fixed;
-//     z-index: 10;
-//     gap: 20px;
-//     bottom: 0;
-//     right: 0;
-//     // transform: translateY(210%);
-//     width: 350px;
-//     height: 150px;
-//     background-color: #323131; // Change the background color as needed
-//     color: #fff; // Change the text color as needed
-//     display: flex;
-//     flex-direction: column;
-//     align-items: center;
-//     justify-content: center;
-//     cursor: pointer;
-//     border-radius: 20px;
-//     // margin-right: 40px;
-
-//     .l-title {
-//         color: rgb(241, 247, 245);
-
-//     }
-
-//     .btn {
-//         padding: 5px 10px;
-//         font-size: 15px;
-//     }
-// }
-
-// // @media (max-width:1024.98px) {
-// //     .leadMagnet {
-// //         bottom: 79%;
-// //         width: 290px;
-// //         height: 150px;
-// //         text-align: center;
-
-// //     }
-// // }
-
-// // @media (max-width: 768px) {
-// //     .leadMagnet {
-// //         width: 80%;
-// //         height: auto;
-// //         // bottom: 10px;
-// //     }
-// // }
-
-
-
 .leadmagnet {
     position: fixed;
-    bottom: 20px;
-    right: 20px;
+    bottom: 40px;
+    right: 30px;
     margin-left: 20px;
     background-color: #333333d5;
     padding: 20px;

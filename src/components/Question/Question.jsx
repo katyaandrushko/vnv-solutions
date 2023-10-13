@@ -29,10 +29,7 @@ const data = {
 }
 
 const styles = {
-  rowTitleColor: 'blue',
   rowContentColor: 'grey',
-  arrowColor: 'red',
-  bgColor: 'very dark shade of red',
   titleTextColor: 'white',
   titleTextSize: '48px',
   rowTitleColor: 'blue',
@@ -41,8 +38,7 @@ const styles = {
   rowContentTextSize: '16px',
   rowContentPaddingTop: '10px',
   rowContentPaddingBottom: '10px',
-  rowContentPaddingLeft: '50px',
-  // rowContentPaddingRight: '150px',
+  rowContentPaddingLeft: '20px',
   arrowColor: 'white',
   transitionDuration: '1s',
   timingFunc: 'ease',
