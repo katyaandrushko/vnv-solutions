@@ -21,20 +21,11 @@
 
 .maincontent {
     background-color: #191818;
-
     gap: 30px;
-
-
     padding: 0 4rem;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-
-
-
     text-align: center;
-
-
-
 
     .why-wrapper {
 
@@ -50,18 +41,14 @@
         background-color: #242424;
 
 
+
         &:hover {
             transform: scale(1.05);
         }
 
 
-        .titlewhy {
-            font-size: 1.5rem;
-            color: #eaeaea;
-            background-color: #242424;
-            padding-bottom: 10px;
 
-        }
+
 
         p {
             font-size: 1rem;
@@ -189,12 +176,7 @@
                 color: #c1bebe;
             }
 
-            .btn {
-                padding: 5px 5px;
-                font-size: 10px;
-                letter-spacing: 1px;
 
-            }
 
 
 
@@ -202,10 +184,19 @@
 
 
         }
+
+        .btn {
+            padding: 5px 10px;
+            font-size: 10px;
+            letter-spacing: 1px;
+
+        }
     }
+
+
 }
 
-@media (max-width: 610.98px) {
+@media (max-width: 768.98px) {
     .button {
         width: 60%;
         padding-top: 40px;
@@ -221,7 +212,23 @@
     }
 }
 
-@media (max-width: 510.98px) {
+@media (max-width: 583.98px) {
+    .button {
+        width: 60%;
+        padding-top: 40px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        .btn {
+            font-size: 15px;
+            font-weight: 600;
+            border-radius: 10px;
+        }
+    }
+}
+
+@media (max-width: 522.98px) {
 
 
     .title {
@@ -261,8 +268,6 @@
 
 
 }
-
-
 
 @media (max-width: 351.98px) {
     .title {

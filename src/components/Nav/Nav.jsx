@@ -9,7 +9,7 @@ function Nav() {
       <div className="navig">
         <div className="navbars">
           <div className="logo">
-            <a href="/">
+            <a href="#main">
               <img src="./assets/logo.png" alt="Logo" className="logo-img" />
             </a>
           </div>
@@ -71,7 +71,7 @@ function Nav() {
               </li>
               <li className="nav-item">
                 <a
-                  href="#"
+                  href="#contact"
                   onClick={() => setNavOpen(!navOpen)}
                   style={{
                     top: navOpen ? '0' : '120px',

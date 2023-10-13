@@ -219,7 +219,8 @@ ul.nav-links li a:hover {
     .nav-overlay {
         position: fixed;
         background-color: #191818;
-
+        ///
+        height: 100%;
         z-index: -5;
         top: -100%;
         left: 0;
@@ -228,6 +229,7 @@ ul.nav-links li a:hover {
         padding: 0;
         overflow: hidden;
         transition: all 2s cubic-bezier(0.16, 1, 0.3, 1);
+
     }
 
     .hamBox {
@@ -295,7 +297,8 @@ ul.nav-links li a:hover {
         font-size: 2em;
         position: relative;
         top: 0;
-        transition: all 2s cubic-bezier(0.16, 1, 0.3, 1);
+        transition: all 0.5s cubic-bezier(0.16, 1, 0.3, 1);
+        transition: none;
     }
 }
 
