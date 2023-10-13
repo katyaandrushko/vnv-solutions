@@ -29,24 +29,14 @@ const data = {
 }
 
 const styles = {
-  rowContentColor: 'grey',
   titleTextColor: 'white',
   titleTextSize: '48px',
-  rowTitleColor: 'blue',
-  rowTitleTextSize: 'medium',
-  rowContentColor: 'grey',
-  rowContentTextSize: '16px',
-  rowContentPaddingTop: '10px',
-  rowContentPaddingBottom: '10px',
-  rowContentPaddingLeft: '20px',
   arrowColor: 'white',
-  transitionDuration: '1s',
-  timingFunc: 'ease',
 }
 
 const config = {
-  animate: true,
-  tabFocus: true,
+  // animate: true,
+  // tabFocus: true,
 }
 
 export default class Question extends Component {
