@@ -18,6 +18,7 @@ function WhyWe() {
           initial={{ x: -100, opacity: 0 }}
           whileInView={{ x: 0, opacity: 1 }}
           transition={{ duration: 0.8 }}
+          viewport={{ once: true, margin: '-15%' }}
         >
           <div className="why-wrapper">
             <div className="why-header">
@@ -39,9 +40,10 @@ function WhyWe() {
         </motion.div>
         <motion.div
           className="project-viewer"
-          initial={{ x: 100, opacity: 0 }}
+          initial={{ x: 64, opacity: 0 }}
           whileInView={{ x: 0, opacity: 1 }}
           transition={{ duration: 0.8 }}
+          viewport={{ once: true, margin: '-15%' }}
         >
           <div className="why-wrapper">
             <div className="why-header">
@@ -67,6 +69,7 @@ function WhyWe() {
           initial={{ x: -100, opacity: 0 }}
           whileInView={{ x: 0, opacity: 1 }}
           transition={{ duration: 0.8 }}
+          viewport={{ once: true, margin: '-15%' }}
         >
           <div className="why-wrapper">
             <div className="why-header">
@@ -89,9 +92,10 @@ function WhyWe() {
         </motion.div>
         <motion.div
           className="project-viewer"
-          initial={{ x: 100, opacity: 0 }}
+          initial={{ x: 64, opacity: 0 }}
           whileInView={{ x: 0, opacity: 1 }}
           transition={{ duration: 0.8 }}
+          viewport={{ once: true, margin: '-15%' }}
         >
           <div className="why-wrapper">
             <div className="why-header">
@@ -118,6 +122,7 @@ function WhyWe() {
           initial={{ x: -100, opacity: 0 }}
           whileInView={{ x: 0, opacity: 1 }}
           transition={{ duration: 0.8 }}
+          viewport={{ once: true, margin: '-15%' }}
         >
           <div className="why-wrapper">
             <div className="why-header">
@@ -141,9 +146,10 @@ function WhyWe() {
         </motion.div>
         <motion.div
           className="project-viewer"
-          initial={{ x: 100, opacity: 0 }}
+          initial={{ x: 64, opacity: 0 }}
           whileInView={{ x: 0, opacity: 1 }}
           transition={{ duration: 0.8 }}
+          viewport={{ once: true, margin: '-15%' }}
         >
           <div className="why-wrapper">
             <div className="why-header">
