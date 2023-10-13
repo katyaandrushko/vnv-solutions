@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.css": "/vnv-solutions/static/css/main.9993009d.css",
-    "main.js": "/vnv-solutions/static/js/main.0c23b6c7.js",
-    "index.html": "/vnv-solutions/index.html",
-    "main.9993009d.css.map": "/vnv-solutions/static/css/main.9993009d.css.map",
-    "main.0c23b6c7.js.map": "/vnv-solutions/static/js/main.0c23b6c7.js.map"
+    "main.css": "/static/css/main.22be003e.css",
+    "main.js": "/static/js/main.e2f8c092.js",
+    "index.html": "/index.html",
+    "main.22be003e.css.map": "/static/css/main.22be003e.css.map",
+    "main.e2f8c092.js.map": "/static/js/main.e2f8c092.js.map"
   },
   "entrypoints": [
-    "static/css/main.9993009d.css",
-    "static/js/main.0c23b6c7.js"
+    "static/css/main.22be003e.css",
+    "static/js/main.e2f8c092.js"
   ]
 }
