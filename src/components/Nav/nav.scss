@@ -57,9 +57,9 @@
 
 @media (max-width: 1024.98px) {
     .navbars {
-        padding: 0 20px;
-        position: absolute;
-        z-index: 1;
+
+        position: fixed;
+        z-index: 10;
         top: 0;
         left: 0;
         width: 100%;
@@ -68,6 +68,10 @@
         justify-content: space-between;
         align-items: center;
 
+        .logo-img {
+            width: 100px;
+            height: 100px;
+        }
 
         .menu-togle {
             cursor: pointer;
@@ -136,7 +140,7 @@
 
             ul.nav-links {
                 position: absolute;
-                top: 60%;
+                top: 50%;
                 left: 50%;
                 transform: translate(-50%, -50%);
                 margin: 0;
@@ -162,7 +166,11 @@
 
 @media (max-width: 679.98px) {
     .navbars {
-        z-index: 4;
+
+        .logo-img {
+            width: 80px;
+            height: 80px;
+        }
 
         .nav-overlay {
 
