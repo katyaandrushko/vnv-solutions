@@ -40,8 +40,8 @@ function Projects() {
         loopedSlides={1}
         speed={700}
       >
-        {projectData.map((project) => (
-          <SwiperSlide>
+        {projectData.map((project, id) => (
+          <SwiperSlide key={id}>
             <div className="swip-content">
               {project.videoSrc ? (
                 <video

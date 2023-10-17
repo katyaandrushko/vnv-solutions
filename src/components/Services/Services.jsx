@@ -80,15 +80,15 @@ function Services() {
       <div className="container">
         <h1 className="services-title">Послуги</h1>
         <div className="services-top">
-          <div class="top-circles">
+          <div className="top-circles">
             <span className="dot"></span>
             <span className="dot"></span>
             <span className="dot"></span>
           </div>
-          <div class="services_top_btns">
+          <div className="services_top_btns">
             {sections.map((section) => (
               <span
-                key={sections.id}
+                key={section.id}
                 className={`services_top_btn ${
                   activeSection === section.id ? 'active' : ''
                 }`}
